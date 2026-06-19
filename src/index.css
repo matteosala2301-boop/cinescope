@@ -1,0 +1,31 @@
+/* Global styles layered on top of Bootstrap. */
+
+body {
+  margin: 0;
+}
+
+/* Homepage hero banner */
+.hero {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Movie card poster: keep a consistent aspect ratio */
+.movie-card__poster {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.movie-card__poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-4px);
+}
